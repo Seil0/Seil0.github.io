@@ -20,103 +20,126 @@
 </head>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
-			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
+	<div class="mdl-layout mdl-js-layout">
+
+		<header class="mdl-layout__header mdl-layout__header--waterfall">
+			<!-- Top row, always visible -->
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">&nbsp &nbsp Kellerkinder</span>
 			</div>
-			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-				<h3 class="text-center">kellerkinder</h3>
-			</div>
-			<div class="mdl-layout--large-screen-only mdl-layout__header-row">
-			</div>
-			<div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-				<a href="#actionpi" class="mdl-layout__tab is-active">ActionPi</a>
-				<a href="#homeflix" class="mdl-layout__tab">Project-HomeFlix</a>
+			<!-- Bottom row, not visible on scroll -->
+			<div class="mdl-layout__header-row">
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation -->
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html#actionpi">ActionPi</a>
+					<a class="mdl-navigation__link" href="index.html#homeflix">Project-HomeFlix</a>
+					<a class="mdl-navigation__link" href="">cemu_UI</a>
+					<a class="mdl-navigation__link" href="">xpFTP</a>
+				</nav>
 			</div>
 		</header>
-
-	<main class="mdl-layout__content">
 		
-		<div class="mdl-layout__tab-panel is-active" id="actionpi">
-			<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-				<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
-					<div class="mdl-card__supporting-text">
-						<h4>ActionPi</h4>
-						<p>ActionPi. Das steht für unendlich Möglichkeiten. Volle
-							Kamera-Ansteuerung, RAW-Video und Foto, direkt Upload im
-							Internet, Gesichtserkennung und viele weiter Features.</p>
-						<p>Eine Kamera zum selbst bauen? Geht nicht? - funktioniert
-							sogar wunderbar! Die ActionPi ist eine selbstgebaute Kamera auf
-							Basis eines Raspberry Pi Modell A+ und einer 5 MPixel picamera.
-							Gesteuert wird die ActionPi über ein in C++ geschriebenes
-							Programm, welches sämtliche Funktionen wie Einstellungsmenü,
-							Bildbetrachter und die Aufnahmefunktione bereit stellt.</p>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Kellerkinder</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="index.html#actionpi">ActionPi</a>
+				<a class="mdl-navigation__link" href="index.html#homeflix">Project-HomeFlix</a>
+				<a class="mdl-navigation__link" href="">cemu_UI</a>
+				<a class="mdl-navigation__link" href="">xpFTP</a>
+			</nav>
+		</div>
 
-						<ul>
-							<li>5 MPixel oder 8 MPixel</li>
-							<li>OpenCV</li>
-							<li>18Wh Li-ion Akku</li>
-							<li>2A Schnelllader per USB</li>
-							<li>4,3 Zoll Display</li>
-							<li>HDMI Ausgang</li>
-							<li>Linux Kernel 4.4</li>
-							<li>32GB Systemspeicher</li>
-							<li>USB Host für Foto und Video abspeichern bis zu 4TB</li>
-							<li>Unterstützt die "Design rule for Camera File system"</li>
-							<li>Wahlweise mit GUI oder ohne GUI</li>
-						</ul>
+		<main class="mdl-layout__content">
+		<br>
 
-						<h5>ActionPi Teaser</h5>
-						<div class="responsive-video">
-							<iframe width="1600" height="900"
+		<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="actionpi">
+
+			<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+				<i class="material-icons">more_vert</i>
+			</button>
+			<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+				<li class="mdl-menu__item"><a class="mdl-navigation__link"
+					href="https://github.com/Seil0/ActionPi">Github</a></li>
+				<li class="mdl-menu__item"><a class="mdl-navigation__link"
+					href="https://github.com/Seil0/ActionPi/wiki">wiki</a></li>
+			</ul>
+
+			<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
+				<div class="mdl-card__supporting-text">
+					<h4>ActionPi</h4>
+					<p>ActionPi. Das steht für unendlich Möglichkeiten. Volle
+						Kamera-Ansteuerung, RAW-Video und Foto, direkt Upload im Internet,
+						Gesichtserkennung und viele weiter Features.</p>
+					<p>Eine Kamera zum selbst bauen? Geht nicht? - funktioniert
+						sogar wunderbar! Die ActionPi ist eine selbstgebaute Kamera auf
+						Basis eines Raspberry Pi Modell A+ und einer 5 MPixel picamera.
+						Gesteuert wird die ActionPi über ein in C++ geschriebenes
+						Programm, welches sämtliche Funktionen wie Einstellungsmenü,
+						Bildbetrachter und die Aufnahmefunktione bereit stellt.</p>
+
+					<ul>
+						<li>5 MPixel oder 8 MPixel</li>
+						<li>OpenCV</li>
+						<li>18Wh Li-ion Akku</li>
+						<li>2A Schnelllader per USB</li>
+						<li>4,3 Zoll Display</li>
+						<li>HDMI Ausgang</li>
+						<li>Linux Kernel 4.4</li>
+						<li>32GB Systemspeicher</li>
+						<li>USB Host für Foto und Video abspeichern bis zu 4TB</li>
+						<li>Unterstützt die "Design rule for Camera File system"</li>
+						<li>Wahlweise mit GUI oder ohne GUI</li>
+					</ul>
+
+					<h5>ActionPi Teaser</h5>
+					<div class="responsive-video">
+						<iframe width="1600" height="900"
 							src="https://www.youtube.com/embed/G_baC40d5QA" frameborder="0"
 							allowfullscreen></iframe>
-						</div>
-					</div>
-					<div class="mdl-card__actions">
-						<a href="https://github.com/Seil0/ActionPi" class="mdl-button">Github</a>
 					</div>
 				</div>
-			</section>
-		</div>
-
-		<div class="mdl-layout__tab-panel is-active" id="homeflix">
-			<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-				<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
-					<div class="mdl-card__supporting-text">
-						<h4>Project-HomeFlix</h4>
-						<p>
-							Project-HomeFlix ist ein Programm welches es dir ermöglicht alle
-							Filme eines Ordner übersichtlich in einer modernen UI
-							darzustellen und die gewünschten Filme abzuspielen. Zusätzlich
-							werden noch Informatione aus der <a href="http://www.imdb.com/">Internet
-								Movie Database</a> angezeigt. Hierfür wird die <a
-								href="https://www.omdbapi.com/">OMDb API</a> verwendet.
-						</p>
-						<h5>Screenshots</h5>
-							<img src="../images/Project-HomeFlix_MainWindow.png"
-								alt="Project-HomeFlix_MainWindow" id="Project-HomeFlix_MainWindow">
-					</div>
-					<div class="mdl-card__actions">
-						<a href="https://github.com/Seil0/Project-HomeFlix" class="mdl-button">Github</a>
-						<a href="https://github.com/Seil0/Project-HomeFlix/releases" class="mdl-button">Download</a>
-					</div>
+				<div class="mdl-card__actions">
+					<a href="https://github.com/Seil0/ActionPi" class="mdl-button">Github</a>
 				</div>
-			</section>
-		</div>
+			</div>
+		</section>
 
+		<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="homeflix">
+			<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
+				<div class="mdl-card__supporting-text">
+					<h4>Project-HomeFlix</h4>
+					<p>
+						Project-HomeFlix ist ein Programm welches es dir ermöglicht alle
+						Filme eines Ordner übersichtlich in einer modernen UI darzustellen
+						und die gewünschten Filme abzuspielen. Zusätzlich werden noch
+						Informatione aus der <a href="http://www.imdb.com/">Internet
+							Movie Database</a> angezeigt. Hierfür wird die <a
+							href="https://www.omdbapi.com/">OMDb API</a> verwendet.
+					</p>
+					<h5>Screenshots</h5>
+					<img src="../images/Project-HomeFlix_MainWindow.png"
+						alt="Project-HomeFlix_MainWindow" id="Project-HomeFlix_MainWindow">
+				</div>
+				<div class="mdl-card__actions">
+					<a href="https://github.com/Seil0/Project-HomeFlix"
+						class="mdl-button">Github</a> <a
+						href="https://github.com/Seil0/Project-HomeFlix/releases"
+						class="mdl-button">Download</a>
+				</div>
+			</div>
+		</section>
+		
+		<br>
 		<footer class="mdl-mini-footer">
 			<div class="mdl-mini-footer__left-section">
 				<div class="mdl-logo">kellerkinder.xyz</div>
 				<ul class="mdl-mini-footer__link-list">
 					<li>maintained by <a href="https://github.com/Seil0">@Seil0</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
 				</ul>
 			</div>
-		</footer>
-        
-		</main>
+		</footer> </main>
 
 	</div>
 </body>
