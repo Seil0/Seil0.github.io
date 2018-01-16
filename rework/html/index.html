@@ -20,16 +20,16 @@
 </head>
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-	<div class="mdl-layout mdl-js-layout">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
 		<header class="mdl-layout__header mdl-layout__header--waterfall">
 			<!-- Top row, always visible -->
 			<div class="mdl-layout__header-row">
 				<!-- Title -->
-				<span class="mdl-layout-title">&nbsp &nbsp Kellerkinder</span>
+				<span class="mdl-layout-title">&nbsp &nbsp Kellerkinder</span>	
 			</div>
 			<!-- Bottom row, not visible on scroll -->
-			<div class="mdl-layout__header-row">
+			<div class="mdl-layout__header-row mdl-layout--large-screen-only">
 				<div class="mdl-layout-spacer"></div>
 				<!-- Navigation -->
 				<nav class="mdl-navigation">
@@ -40,7 +40,7 @@
 				</nav>
 			</div>
 		</header>
-		
+
 		<div class="mdl-layout__drawer">
 			<span class="mdl-layout-title">Kellerkinder</span>
 			<nav class="mdl-navigation">
@@ -54,18 +54,8 @@
 		<main class="mdl-layout__content">
 		<br>
 
+
 		<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="actionpi">
-
-			<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-				<i class="material-icons">more_vert</i>
-			</button>
-			<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-				<li class="mdl-menu__item"><a class="mdl-navigation__link"
-					href="https://github.com/Seil0/ActionPi">Github</a></li>
-				<li class="mdl-menu__item"><a class="mdl-navigation__link"
-					href="https://github.com/Seil0/ActionPi/wiki">wiki</a></li>
-			</ul>
-
 			<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
 				<div class="mdl-card__supporting-text">
 					<h4>ActionPi</h4>

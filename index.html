@@ -1,81 +1,136 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Kellerkinder</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Kellerkinder</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/Seil0/ActionPi" class="btn">ActionPi</a>
-      <a href="https://github.com/Seil0/Project-HomeFlix/releases" class="btn">Download Project-HomeFlix</a>
-      <a href="https://github.com/Seil0/Bergerboard/releases" class="btn">Download BergerBoard</a>
-    </section>
+<html lang="de">
+<head>
+<title>kellerkinder.xyz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="language" content="de">
+<meta name="revisit-after" CONTENT="7 days">
+<meta name="expires" content="0">
 
-    <section class="main-content">
-      <h3>
+<!-- mdl imports -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet"
+	href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-<p>Willkommen auf unserer Webseite.</p>
+<!-- styles.css -->
+<link rel="stylesheet" href="stylesheets/styles.css">
+</head>
 
-<h3>
-<a id="projekte" class="anchor" href="#projekte" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projekte</h3>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-<p>Hier stellen wir einige unserer Projekte vor.</p>
+		<header class="mdl-layout__header mdl-layout__header--waterfall">
+			<!-- Top row, always visible -->
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">&nbsp &nbsp Kellerkinder</span>	
+			</div>
+			<!-- Bottom row, not visible on scroll -->
+			<div class="mdl-layout__header-row mdl-layout--large-screen-only">
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation -->
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html#actionpi">ActionPi</a>
+					<a class="mdl-navigation__link" href="index.html#homeflix">Project-HomeFlix</a>
+					<a class="mdl-navigation__link" href="">cemu_UI</a>
+					<a class="mdl-navigation__link" href="">xpFTP</a>
+				</nav>
+			</div>
+		</header>
 
-<h3>
-<a id="actionpi" class="anchor" href="#actionpi" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ActionPi</h3>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Kellerkinder</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="index.html#actionpi">ActionPi</a>
+				<a class="mdl-navigation__link" href="index.html#homeflix">Project-HomeFlix</a>
+				<a class="mdl-navigation__link" href="">cemu_UI</a>
+				<a class="mdl-navigation__link" href="">xpFTP</a>
+			</nav>
+		</div>
 
-<p>ActionPi. Das steht für unendlich Möglichkeiten.
-Volle Kamera-Ansteuerung, RAW-Video und Foto, direkt Upload im Internet, Gesichtserkennung und viele weiter Features.</p>
+		<main class="mdl-layout__content">
+		<br>
 
-<p>Eine Kamera zum selbst bauen? Geht nicht? - funktioniert sogar wunderbar!
-Die ActionPi ist eine selbstgebaute Kamera auf Basis eines Raspberry Pi Modell A+ und einer 5 MPixel <a href="https://www.raspberrypi.org/learning/getting-started-with-picamera/">picamera</a>. Gesteuert wird die ActionPi über ein in C++ geschriebenes Programm, welches sämtliche Funktionen wie Einstellungsmenü, Bildbetrachter und die Aufnahmefunktione bereit stellt.</p>
 
-<p>Technische Daten:</p>
+		<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="actionpi">
+			<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
+				<div class="mdl-card__supporting-text">
+					<h4>ActionPi</h4>
+					<p>ActionPi. Das steht für unendlich Möglichkeiten. Volle
+						Kamera-Ansteuerung, RAW-Video und Foto, direkt Upload im Internet,
+						Gesichtserkennung und viele weiter Features.</p>
+					<p>Eine Kamera zum selbst bauen? Geht nicht? - funktioniert
+						sogar wunderbar! Die ActionPi ist eine selbstgebaute Kamera auf
+						Basis eines Raspberry Pi Modell A+ und einer 5 MPixel picamera.
+						Gesteuert wird die ActionPi über ein in C++ geschriebenes
+						Programm, welches sämtliche Funktionen wie Einstellungsmenü,
+						Bildbetrachter und die Aufnahmefunktione bereit stellt.</p>
 
-<ul>
-<li>5 MPixel oder 8 MPixel</li>
-<li>OpenCV</li>
-<li>18Wh Li-ion Akku</li>
-<li>2A Schnelllader per USB</li>
-<li>4,3 Zoll Display</li>
-<li>HDMI Ausgang</li>
-<li>Linux Kernel 4.4</li>
-<li>32GB Systemspeicher</li>
-<li>USB Host für Foto und Video abspeichern bis zu 4TB</li>
-<li>Unterstützt die "Design rule for Camera File system"</li>
-<li>Wahlweise mit GUI oder ohne GUI</li>
-</ul>
+					<ul>
+						<li>5 MPixel oder 8 MPixel</li>
+						<li>OpenCV</li>
+						<li>18Wh Li-ion Akku</li>
+						<li>2A Schnelllader per USB</li>
+						<li>4,3 Zoll Display</li>
+						<li>HDMI Ausgang</li>
+						<li>Linux Kernel 4.4</li>
+						<li>32GB Systemspeicher</li>
+						<li>USB Host für Foto und Video abspeichern bis zu 4TB</li>
+						<li>Unterstützt die "Design rule for Camera File system"</li>
+						<li>Wahlweise mit GUI oder ohne GUI</li>
+					</ul>
 
-<h4>
-<a id="actionpi-teaser" class="anchor" href="#actionpi-teaser" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ActionPi Teaser</h4>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/G_baC40d5QA" frameborder="0" allowfullscreen></iframe>
+					<h5>ActionPi Teaser</h5>
+					<div class="responsive-video">
+						<iframe width="1600" height="900"
+							src="https://www.youtube.com/embed/G_baC40d5QA" frameborder="0"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="mdl-card__actions">
+					<a href="https://github.com/Seil0/ActionPi" class="mdl-button">Github</a>
+				</div>
+			</div>
+		</section>
 
-<h3>
-<a id="project-homeflix" class="anchor" href="#project-homeflix" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project-HomeFlix</h3>
+		<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="homeflix">
+			<div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--9-col-tablet mdl-cell--6-col-phone">
+				<div class="mdl-card__supporting-text">
+					<h4>Project-HomeFlix</h4>
+					<p>
+						Project-HomeFlix ist ein Programm welches es dir ermöglicht alle
+						Filme eines Ordner übersichtlich in einer modernen UI darzustellen
+						und die gewünschten Filme abzuspielen. Zusätzlich werden noch
+						Informatione aus der <a href="http://www.imdb.com/">Internet
+							Movie Database</a> angezeigt. Hierfür wird die <a
+							href="https://www.omdbapi.com/">OMDb API</a> verwendet.
+					</p>
+					<h5>Screenshots</h5>
+					<img src="../images/Project-HomeFlix_MainWindow.png"
+						alt="Project-HomeFlix_MainWindow" id="Project-HomeFlix_MainWindow">
+				</div>
+				<div class="mdl-card__actions">
+					<a href="https://github.com/Seil0/Project-HomeFlix"
+						class="mdl-button">Github</a> <a
+						href="https://github.com/Seil0/Project-HomeFlix/releases"
+						class="mdl-button">Download</a>
+				</div>
+			</div>
+		</section>
+		
+		<br>
+		<footer class="mdl-mini-footer">
+			<div class="mdl-mini-footer__left-section">
+				<div class="mdl-logo">kellerkinder.xyz</div>
+				<ul class="mdl-mini-footer__link-list">
+					<li>maintained by <a href="https://github.com/Seil0">@Seil0</a></li>
+				</ul>
+			</div>
+		</footer> </main>
 
-<p><a href="https://github.com/Seil0/Project-HomeFlix">Project-HomeFlix</a> ist ein Programm welches es dir ermöglicht alle Filme eines Ordner übersichtlich in einer modernen UI darzustellen 
-und die gewünschten Filme abzuspielen. Zusätzlich werden noch Informatione aus der <a href="http://www.imdb.com/">Internet Movie Database</a> angezeigt. 
-Hierfür wird die <a href="https://www.omdbapi.com/">OMDb API</a> verwendet.</p>
-
-<h4>Screenshots</h2>
-<img src="pictures/Project-HomeFlix_MainWindow.png" alt="Project-HomeFlix_MainWindow" style="width:978px;height:653px;">
-<span class=""><a href="rework/html/index.html">rework</a></span>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner">Kellerkinder website is maintained by <a href="https://github.com/Seil0">Seil0</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
+	</div>
+</body>
 </html>
