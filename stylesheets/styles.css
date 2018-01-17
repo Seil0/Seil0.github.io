@@ -227,6 +227,12 @@ overflow: hidden;
 	width: 100%;
 	height: 66.7%;
 }
+
+#cemu_UI_MainWindow{
+	width: 100%;
+	height: 71.3%;
+}
+
 a {
 	color: #424242;	
 }
