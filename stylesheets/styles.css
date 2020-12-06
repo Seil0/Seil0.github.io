@@ -24,8 +24,8 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary: #000000;
-        --secondary: #303030;
+        --primary: #121212;
+        --secondary: #202020;
         --textprimary: #ffffff;
         --textsecondary: #c0c0c0;
     }
@@ -322,4 +322,8 @@ a {
 
 .theme-text {
     color: var(--textprimary);
+}
+
+.theme-link {
+    color: var(--textsecondary);
 }
